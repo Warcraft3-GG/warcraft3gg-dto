@@ -3,7 +3,7 @@ export type GetMapDimensions = {
   y: number
 }
 
-export type GetMapParseDetailsResponse = {
+export type GetMapDetailsDTO = {
   category: string
   tileset: string
   dimensions: GetMapDimensions
@@ -20,7 +20,7 @@ export type GetMapParseDetailsResponse = {
   players: string
 }
 
-export type GetMapParseMapFileResponse = {
+export type GetMapFileDTO = {
   content: Buffer
   sha1: string
 }
@@ -31,7 +31,7 @@ export type GetMapDTO = {
   url: string
   version?: string
   description: string
-  details: GetMapParseDetailsResponse
+  details: GetMapDetailsDTO
   image: string
-  file?: GetMapParseMapFileResponse
+  file?: GetMapFileDTO
 }

@@ -1,6 +1,6 @@
 {
   "name": "warcraft3gg-dto",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Warcraft3gg dto",
   "main": "dist/index.js",
   "scripts": {
