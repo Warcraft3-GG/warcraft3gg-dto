@@ -29,6 +29,7 @@ export type GetMapDTO = {
   id: number
   name: string
   url: string
+  version?: string
   description: string
   details: GetMapParseDetailsResponse
   image: string
