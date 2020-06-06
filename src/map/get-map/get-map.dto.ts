@@ -25,6 +25,12 @@ export type GetMapFileDTO = {
   sha1: string
 }
 
+export type GetMapFormat = {
+  roc?: boolean
+  tft?: boolean
+  reforged?: boolean
+}
+
 export type GetMapDTO = {
   id: number
   name: string
@@ -33,5 +39,6 @@ export type GetMapDTO = {
   description: string
   details: GetMapDetailsDTO
   image: string
+  format?: GetMapFormat
   file?: GetMapFileDTO
 }
